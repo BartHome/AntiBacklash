@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +59,16 @@
             this.panel1.TabIndex = 1;
             this.panel1.DragDrop += new System.Windows.Forms.DragEventHandler(this.panel1_DragDrop);
             this.panel1.DragEnter += new System.Windows.Forms.DragEventHandler(this.panel1_DragEnter_1);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(82, 172);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(523, 17);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "output file will be placed in the same directory with _out appended to the filena" +
+    "me.";
             // 
             // numericUpDown1
             // 
@@ -86,16 +97,6 @@
             this.label2.Text = "Enter amount of Z-backlash to compensate for in tenths of a millimeter, starting " +
     "at the second layer (1 = 0.1 mm).";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(82, 172);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(523, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "output file will be placed in the same directory with _out appended to the filena" +
-    "me.";
-            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -105,6 +106,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
